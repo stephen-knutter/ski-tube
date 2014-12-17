@@ -1,0 +1,19 @@
+#footerList{
+	text-align: center;
+}
+
+#footerList li{
+	list-style: none;
+	display: inline-block;
+	font-size: 8px;
+}
+
+#footerList li a{
+	text-decoration: none;
+	color: black;
+	font-size: 8px;
+}
+
+#footerList li a:hover{
+	text-decoration: underline;
+}

@@ -1,0 +1,404 @@
+#mainWrap{
+	width: 96%;
+	position: relative;
+}
+
+/*VIDEO LIST*/
+#videos{
+	float: left;
+	margin: 0 auto;
+	width: 75%;
+	position: relative;
+}
+
+#videoList li{
+	margin: 20px 2%;
+	padding: 0;
+	display: inline-block;
+	width: 40%;
+	position: relative;
+}
+
+#videoList img{
+	width: 100%;
+	height: 230px;
+	margin: 0;
+	padding: 0;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+}
+
+#videoList li a{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.title{
+	font-size: 11px;
+	background-color: black;
+	padding: 1px 0 0 0;
+	margin: 0;
+	position: absolute;
+	color: yellow;
+	text-align: center;
+	top: 2px;
+	width: 100%;
+	height: 15px;
+	overflow: hidden;
+	border-top-right-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-o-border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-o-border-top-left-radius: 5px;
+}
+
+.time{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	bottom: 8px;
+	left: 5px;
+	color: yellow;
+	font-size: 10px;
+}
+
+.frontRating{
+	position: absolute;
+	bottom: 8px;
+	right: 2px;
+	color: yellow;
+	font-size: 10px;
+}
+
+.backRating{
+	position: absolute;
+	left: -20px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/*ADD*/
+#add{
+	width: 30%;
+	margin: 50px 0px;
+	padding: 0;
+	position: fixed;
+	right: 20px;
+	top: 150px;
+}
+
+#add img{
+	max-width: 100%;
+}
+
+.pageLinks, .pageLinks a{
+	color: red;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width : 900px){
+
+	#mainWrap{
+		position: relative;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	#videos{
+		width: 90%;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		position: relative;
+		float: none;
+	}
+	
+	#videoList{
+		margin: 0;
+		padding:0;
+	}
+
+	#videoList li{
+		width: auto;
+	}
+	
+	#add{
+		position: inherit;
+		width: 100%;
+		margin: 0 0;
+		padding: 0;
+		top: 0;
+		left: 0;
+	}
+	
+	#add img{
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 430px){
+	#mainWrap{
+		width: 99%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#videos{
+		width: 90%;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		position: relative;
+	}
+
+}
+
+/*WATCH_VIDEO.PHP*/
+#wrap{
+	position: relative;
+	width: 96%;
+	margin: 20px auto;
+}
+
+#desc{
+	position: relative;
+	width: 75%;
+	margin: 0 auto;
+}
+
+#review{
+	position: relative;
+	width: 75%;
+	margin: 0 auto;
+}
+
+#review textarea{
+	border: 1px solid black;
+}
+
+#submitRating{
+	border: 1px solid red;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+#fullMovie{
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+
+#commentBox{
+	width: 100%;
+	resize: none;
+	height: 100px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#userReviews{
+	position: relative;
+	width: 75%;
+	margin: 0 auto;
+}
+
+#loginOrsignup{
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#loginOrsignup a{
+	margin: 0;
+	padding: 0;
+	color: red;
+}
+
+#outOfRating{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 20px;
+}
+
+.singleReview{
+	margin: 0;
+	padding: 10px 0 0 0;
+	color: red;
+}
+
+/*STARS*/
+.stars div a {
+  background: transparent url(../images/sprite_rate.png) 0 0 no-repeat;
+  display: inline-block;
+  height: 23px;
+  width: 12px;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: black;
+  padding: 1px 0px;
+}
+
+.stars a.rating-right {
+  background-position: 0 -23px;
+  padding-right: 1px;
+}
+
+.stars a.rating-over {
+  background-position: 0 -92px;
+}
+
+.stars a.rating-over.rating-right {
+  background-position: 0 -115px;
+}
+
+.stars a.rating {
+  background-position: 0 -92px;
+}
+
+.stars a.rating.rating-right {
+  background-position: 0 -115px;
+}
+
+/*USER REVIEW*/
+#reviewBanner{
+	width: 100%;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+	color: black;
+	text-align: center;
+	font-size: 1.7em;
+}
+
+#reviewBanner p{
+	margin: 0;
+	padding: 0;
+}
+
+/*REGESTER.PHP*/
+#regWrap{
+	width: 96%;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+#regWrap h3{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -20px;
+	text-decoration: underline;
+}
+
+#regWrap label{
+	display: inline-block;
+	width: 100px;
+}
+
+#email, #password, #confirm, #username{
+	font-family: monospace;
+	width: 50%;
+	border: 1px solid black;
+}
+
+#loginForm{
+	background-color: #F0F1F4;
+	width: 30%;
+	margin: 20px auto;
+	padding: 30px;
+	border: 1px solid #ddd;
+}
+
+#loginButton{
+	border: 1px solid red;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+	font-family: monospace;
+	cursor: pointer;
+}
+
+#registerForm{
+	background-color: #F0F1F4;
+	width: 30%;
+	margin: 20px auto;
+	padding: 30px;
+	border: 1px solid #ddd;
+}
+
+/*ALERT STYLES*/
+
+#alertList{
+	width: 40%;
+	margin-left: 30%;
+	color: red;
+	font-size: .8em;
+}
+
+.loginAlert{
+	background: rgba(242, 222, 222, 0.9);
+	padding: 5px 1.5% 5px 2%;
+	border: 1px solid #B37987;
+}
+
+#alert{
+	background-color: #F2DEDE;
+	background: rgba(242, 222, 222, 0.9);
+	width: 40%;
+	margin-left: 30%;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: .6em;
+	font-family: Verdana;
+	color: #B37987;
+	font-weight:  bold;
+	border: 1px solid #B37987;
+}
+
+/*PAGE LINKS*/
+.pageLinks a{
+	border: 1px solid #cccccc;
+	text-decoration: none;
+	padding: 5px;
+	margin: 0;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width : 700px){
+	#review, #userReviews{
+		width: 100%;
+	}
+}
+
+

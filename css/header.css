@@ -1,0 +1,85 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	font: normal normal bold 17px/1.4em 'Courier New',courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace;
+	background-color: #E6E6E6;
+}
+
+#header{
+	border-top: 5px solid red;
+	background-color: #F0F1F4;
+	border-bottom: 1px solid #dddddd;
+}
+
+#logo{
+	margin: 0 auto;
+	padding: 30px 0px;
+	font-size: 2.1em;
+	font-weight: bold;
+	text-align: center;
+}
+
+#logo a{
+	text-decoration: none;
+	color: black;
+	margin: 0;
+	padding: 0;
+	background: url('../images/skier.jpg') 0 0 no-repeat;
+	padding-left: 40px;
+}
+
+
+/*SESSION STYLES*/
+#sessionUser{
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	display: inline-block;
+}
+
+#sessionButton{
+	display: inline-block;
+	background-color: black;
+	color: white;
+	border: 1px solid red;
+	padding: 5px;
+	text-decoration: none;
+}
+
+@media only screen and (max-width : 900px){
+	#logo{
+		text-align: inherit;
+		font-size: 1.7em;
+	}
+	
+	#logo a{
+		
+		padding-bottom: 20px;
+		margin-bottom: 10px;
+	}
+	
+	#sessionUser{
+		top: 30px;
+	}
+}
+
+@media only screen and (max-width : 430px){
+	#logo{
+		text-align: inherit;
+		font-size: 1em;
+	}
+	
+	#logo a{
+		padding-bottom: 20px;
+		margin-bottom: 10px;
+	}
+	
+	#sessionUser{
+		top: 30px;
+		font-size: 11px;
+	}
+	
+	#sessionButton{
+		font-size: 11px;
+	}
+}
